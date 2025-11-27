@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html5>
+    <head>
+        <meta charset ="UTF-8">
+        <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+        <title>Mon Portefeuille</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+
+<body>         
+
+<div class="w-full sm:h-screen h-full bg-black">
+<div
+    class="w-full h-fit bg-[url('https://images.unsplash.com/photo-1607798748738-b15c40d33d57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMXx8Y29kZXxlbnwwfDB8fHwxNzMyNzk1MjA5fDA&ixlib=rb-4.0.3&q=80&w=1080')] bg-cover bg-center bg-no-repeat">
+
+    <header class="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg bg-black/60">
+
+        <div class="flex-1 flex justify-between items-center">
+            <a href="#" class="text-3xl font-semibold font-serif text-green-400 flex items-center gap-3">
+                <img src="https://via.placeholder.com/40x40.png?text=MP" 
+                     alt="Logo Mon Portefeuille" 
+                     class="w-10 h-10 rounded-full border border-green-400">
+                Mon Portefeuille
+            </a>
+        </div>
+
+        <label for="menu-toggle" class="pointer-cursor md:hidden block">
+            
+            <title>menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+        </label>
+
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+            <nav>
+                <ul class="md:flex items-center justify-between text-base text-white pt-4 md:pt-0">
+                    <li><a class="md:p-4 py-3 px-0 block text-green-500 hover:text-green-500" href="#">Home</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="#">About Me</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="#">Education</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="#">Experience</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-green-500 md:mb-0 mb-2" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="w-full h-full relative top-10 pb-20">
+        <div class="lg:px-16 px-8 flex sm:flex-row flex-col flex-col-reverse gap-6 justify-center items-center">
+            <div class="sm:text-left text-center text-white">
+                <h4 class="sm:text-2xl text-3xl font-semibold w-fit bg-gray-900/40 p-3">
+                    Hello, My name is
+                    <span class="text-green-500 sm:text-2xl text-xl font-serif">Khardiata BA</span>
+                </h4>
+
+                <h1 class="mt-4 sm:text-4xl text-2xl">I'm
+                    <span class="typing libre-baskerville-bold text-green-500"></span>
+                </h1>
+
+                <p class="mt-4 text-lg capitalize">Développeuse web débutante, passionnée par la création 
+                    de sites interactifs et responsives, formée en HTML, CSS et JavaScript, avec une bonne maîtrise
+                     du DOM pour dynamiser les pages web.</p>
+                <div class=" mt-6 flex sm:flex-row flex-col gap-4 sm:justify-start justify-center">
+                    <button class="p-2 px-6 text-white font-semibold rounded-full outline outline-2 outline-green-500 hover:bg-green-600 transition ease-in-out delay-150">Hire Me</button>
+                    <button class="p-2 px-6 text-white font-semibold rounded-full outline outline-2 outline-yellow-500 hover:bg-yellow-600 transition ease-in-out delay-150">Download CV</button>
+                </div>
+            </div>
+
+            <!-- Image -->
+             <img class="w-32 sm:w-40 md:w-48 rounded-full outline outline-2 outline-green-400/60" 
+                 src="PORTFOLIO.jpeg" alt="My Pic" />
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+<script>
+    var typed = new Typed('.typing', {
+        strings: ['', 'FullStack Developer,', 'Frontend Developer,', 'Backend Developer,', 'Mobile Apps Developer.'],
+        typeSpeed: 100,
+        BackSpeed: 60,
+        loop: true
+    })
+</script>
+
+</body>
+</html5>
