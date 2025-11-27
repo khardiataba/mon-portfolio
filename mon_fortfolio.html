@@ -1,54 +1,51 @@
 <!DOCTYPE html>
-<html5>
-    <head>
-        <meta charset ="UTF-8">
-        <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
-        <title>Mon Portefeuille</title>
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    </head>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portefeuille – Khardiata BA</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
 
-<body>         
+<body class="bg-black">
 
-<div class="w-full sm:h-screen h-full bg-black">
+<!-- ===== HERO ===== -->
 <div
     class="w-full h-fit bg-[url('https://images.unsplash.com/photo-1607798748738-b15c40d33d57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMXx8Y29kZXxlbnwwfDB8fHwxNzMyNzk1MjA5fDA&ixlib=rb-4.0.3&q=80&w=1080')] bg-cover bg-center bg-no-repeat">
 
     <header class="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg bg-black/60">
-
         <div class="flex-1 flex justify-between items-center">
             <a href="#" class="text-3xl font-semibold font-serif text-green-400 flex items-center gap-3">
-                <img src="https://via.placeholder.com/40x40.png?text=MP" 
-                     alt="Logo Mon Portefeuille" 
+                <img src="PORTFOLIO.jpeg" 
+                     alt="Logo" 
                      class="w-10 h-10 rounded-full border border-green-400">
                 Mon Portefeuille
             </a>
         </div>
 
-        <label for="menu-toggle" class="pointer-cursor md:hidden block">
-            
-            <title>menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        <label for="menu-toggle" class="cursor-pointer md:hidden block">
+            <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
             </svg>
         </label>
-
         <input class="hidden" type="checkbox" id="menu-toggle" />
 
         <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
             <nav>
                 <ul class="md:flex items-center justify-between text-base text-white pt-4 md:pt-0">
-                    <li><a class="md:p-4 py-3 px-0 block text-green-500 hover:text-green-500" href="#">Home</a></li>
-                    <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="#">About Me</a></li>
-                    <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="#">Education</a></li>
-                    <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="#">Experience</a></li>
-                    <li><a class="md:p-4 py-3 px-0 block hover:text-green-500 md:mb-0 mb-2" href="#">Contact</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="#home">Accueil</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="#about">A propos</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="#services">Services</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="#work">Projets</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="w-full h-full relative top-10 pb-20">
+    <div class="w-full h-full relative top-10 pb-20" id="home">
         <div class="lg:px-16 px-8 flex sm:flex-row flex-col flex-col-reverse gap-6 justify-center items-center">
-            <div class="sm:text-left text-center text-white">
+            <div class="text-white text-center sm:text-left">
                 <h4 class="sm:text-2xl text-3xl font-semibold w-fit bg-gray-900/40 p-3">
                     Hello, My name is
                     <span class="text-green-500 sm:text-2xl text-xl font-serif">Khardiata BA</span>
@@ -58,32 +55,166 @@
                     <span class="typing libre-baskerville-bold text-green-500"></span>
                 </h1>
 
-                <p class="mt-4 text-lg capitalize">Développeuse web débutante, passionnée par la création 
-                    de sites interactifs et responsives, formée en HTML, CSS et JavaScript, avec une bonne maîtrise
-                     du DOM pour dynamiser les pages web.</p>
-                <div class=" mt-6 flex sm:flex-row flex-col gap-4 sm:justify-start justify-center">
-                    <button class="p-2 px-6 text-white font-semibold rounded-full outline outline-2 outline-green-500 hover:bg-green-600 transition ease-in-out delay-150">Hire Me</button>
-                    <button class="p-2 px-6 text-white font-semibold rounded-full outline outline-2 outline-yellow-500 hover:bg-yellow-600 transition ease-in-out delay-150">Download CV</button>
+                <p class="mt-4 text-lg">
+                    Développeuse web débutante, passionnée par les sites interactifs, responsives
+                    et modernes. HTML, CSS, JavaScript & manipulation avancée du DOM.
+                </p>
+
+                <div class="mt-6 flex sm:flex-row flex-col gap-4">
+                    <button class="p-2 px-6 text-white font-semibold rounded-full outline outline-2 outline-green-500 hover:bg-green-600 transition">Hire Me</button>
+
+                    <a href="Cv Wife.pdf" download
+                       class="p-2 px-6 text-white font-semibold rounded-full outline outline-2 outline-yellow-500 hover:bg-yellow-600 transition">
+                        Download CV
+                    </a>
                 </div>
             </div>
 
-            <!-- Image -->
-             <img class="w-32 sm:w-40 md:w-48 rounded-full outline outline-2 outline-green-400/60" 
-                 src="PORTFOLIO.jpeg" alt="My Pic" />
+            <img class="w-32 sm:w-40 md:w-48 rounded-full outline outline-2 outline-green-400/60" 
+                 src="PORTFOLIO.jpeg" alt="Ma photo" />
         </div>
     </div>
 </div>
-</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+
+<!-- ===== A PROPOS ===== -->
+<section id="about" class="w-full bg-gray-900 py-20 px-6">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+        <img src="PORTFOLIO.jpeg" 
+             class="rounded-2xl w-80 shadow-lg border border-green-600 mx-auto" alt="About image">
+
+        <div class="text-white">
+            <h2 class="text-3xl font-bold text-green-400 mb-4">À propos de moi</h2>
+            <p class="text-gray-300 leading-relaxed">
+                Je suis Khardiata BA, développeuse débutante en web passionnée par la création 
+                d’expériences modernes, interactives et responsives.
+            </p>
+
+            <p class="text-gray-300 mt-4 leading-relaxed">
+                Avec HTML, CSS, JavaScript & Tailwind, je transforme des idées en interfaces élégantes.
+            </p>
+
+            <button class="mt-6 px-6 py-2 rounded-full bg-green-600 font-semibold hover:bg-green-700 transition">
+                En savoir plus
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== SERVICES ===== -->
+<section id="services" class="w-full py-20 bg-black text-white px-6">
+    <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-green-400">Mes Services</h2>
+        <p class="text-gray-300 mt-3 text-lg">
+            Création moderne, intuitive et professionnelle pour vos projets web.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+
+            <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-green-600">
+                <h3 class="text-xl font-bold mb-3">Développement Frontend</h3>
+                <p class="text-gray-400">Création de pages modernes en HTML, CSS, JavaScript et Tailwind.</p>
+            </div>
+
+            <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-green-600">
+                <h3 class="text-xl font-bold mb-3">Responsive Design</h3>
+                <p class="text-gray-400">Optimisation mobile/tablette pour une navigation fluide.</p>
+            </div>
+
+            <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-green-600">
+                <h3 class="text-xl font-bold mb-3">UI & Animations</h3>
+                <p class="text-gray-400">Interfaces agréables, animations fluides et expérience optimisée.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== PROJETS ===== -->
+<section id="work" class="bg-gray-900 py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-green-400 text-center">Mes Projets</h2>
+
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+
+            <div class="bg-black p-4 rounded-xl border border-gray-700 hover:border-green-500 transition">
+                <img src="https://via.placeholder.com/300x200" class="rounded-lg mb-3" alt="">
+                <h3 class="text-xl text-white font-semibold">Site Touristique Sénégal</h3>
+            </div>
+
+            <div class="bg-black p-4 rounded-xl border border-gray-700 hover:border-green-500 transition">
+                <img src="https://via.placeholder.com/300x200" class="rounded-lg mb-3" alt="">
+                <h3 class="text-xl text-white font-semibold">Todo List App</h3>
+            </div>
+
+            <div class="bg-black p-4 rounded-xl border border-gray-700 hover:border-green-500 transition">
+                <img src="https://via.placeholder.com/300x200" class="rounded-lg mb-3" alt="">
+                <h3 class="text-xl text-white font-semibold">Melodrift – Lecteur Audio</h3>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== CV ===== -->
+<section id="cv" class="w-full bg-black py-20 px-6 text-white">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-green-400">Mon CV</h2>
+        <p class="text-gray-300 mt-4">Téléchargez mon CV complet au format PDF.</p>
+
+        <a href="Cv Wife.pdf" download
+           class="mt-6 inline-block px-6 py-3 rounded-full bg-yellow-500 hover:bg-yellow-600 transition font-semibold">
+            Télécharger le CV
+        </a>
+    </div>
+</section>
+
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="bg-gray-900 py-20 px-6 text-white">
+    <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-green-400">Me Contacter</h2>
+        <p class="text-gray-300 mt-3">Pour un projet, une collaboration ou une mission freelance.</p>
+
+        <form action="#" class="mt-10 grid md:grid-cols-2 gap-6">
+
+            <input type="text" placeholder="Votre Nom"
+                   class="p-3 rounded-lg bg-black border border-gray-700 focus:border-green-500">
+
+            <input type="email" placeholder="Votre Email"
+                   class="p-3 rounded-lg bg-black border border-gray-700 focus:border-green-500">
+
+            <textarea placeholder="Votre Message" rows="5"
+                      class="md:col-span-2 p-3 rounded-lg bg-black border border-gray-700 focus:border-green-500"></textarea>
+
+            <button class="md:col-span-2 px-6 py-3 bg-green-600 rounded-full font-semibold hover:bg-green-700 transition">
+                Envoyer
+            </button>
+        </form>
+    </div>
+</section>
+
+
+<!-- ===== FOOTER ===== -->
+<footer class="w-full bg-black py-6 text-center text-gray-400">
+    © 2025 Mon Portefeuille – Khardiata BA. Tous droits réservés.
+</footer>
+
+
+<!-- ===== TYPED JS ===== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 <script>
     var typed = new Typed('.typing', {
-        strings: ['', 'FullStack Developer,', 'Frontend Developer,', 'Backend Developer,', 'Mobile Apps Developer.'],
+        strings: ['', 'Développeuse Web', 'Frontend Developer', 'Future FullStack Developer'],
         typeSpeed: 100,
-        BackSpeed: 60,
+        backSpeed: 60,
         loop: true
-    })
+    });
 </script>
 
 </body>
-</html5>
+</html>
